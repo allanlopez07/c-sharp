@@ -60,8 +60,60 @@ namespace inventario
             movimientoInventario(codigo, Int32.Parse(cantidad),"+");
         }
 
+        static void SalidaDeInventario() {
+            string codigo = "";
+            string cantidad = "";
 
+            Console.Clear();
+            Console.WriteLine();
 
+            Console.WriteLine("Salida de Productos del Inventario");
+            Console.WriteLine("**********************************");
+            Console.Write("Ingrese el codigo del producto: ");
+            codigo = Console.ReadLine();
+            Console.Write("Ingrese la cantidad del producto: ");
+            cantidad = Console.ReadLine();
+
+            movimientoInventario(codigo, Int32.Parse(cantidad),"-");
+        }
+
+//--------------------------------------------------------Tarea---------------
+
+static void AjustePositivoDeInventario() {
+            string codigo = "";
+            string cantidad = "";
+
+            Console.Clear();
+            Console.WriteLine();
+
+            Console.WriteLine("Ajuste Positivo al Inventario");
+            Console.WriteLine("**********************************");
+            Console.Write("Ingrese el codigo del producto: ");
+            codigo = Console.ReadLine();
+            Console.Write("Ingrese la cantidad del producto: ");
+            cantidad = Console.ReadLine();
+
+            movimientoInventario(codigo, Int32.Parse(cantidad),"+");
+        }
+
+        static void AjusteNegativoDeInventario() {
+            string codigo = "";
+            string cantidad = "";
+
+            Console.Clear();
+            Console.WriteLine();
+
+            Console.WriteLine("Ajuste Negativo al Inventario");
+            Console.WriteLine("**********************************");
+            Console.Write("Ingrese el codigo del producto: ");
+            codigo = Console.ReadLine();
+            Console.Write("Ingrese la cantidad del producto: ");
+            cantidad = Console.ReadLine();
+
+            movimientoInventario(codigo, Int32.Parse(cantidad),"-");
+        }
+
+    //--------------------------------------------------------Tarea---------------
         static void Main(string[] args)
         {
             string opcion = "";
@@ -74,6 +126,8 @@ namespace inventario
                 Console.WriteLine("1 - Productos");
                 Console.WriteLine("2 - Ingreso de Inventario");
                 Console.WriteLine("3 - Salida de Inventario");
+                Console.WriteLine("4 - Ajuste Positivo del Inventario");
+                Console.WriteLine("5 - Ajuste Negativo del Inventario");
                 Console.WriteLine("0 - Salir");
                 opcion =Console.ReadLine();
 
@@ -85,6 +139,19 @@ namespace inventario
 
                     case "2":
                    ingresoDeInventario();
+                    break;
+
+                     case "3":
+                   SalidaDeInventario();
+                    break;
+
+//------------------------------------------------Tarea---------------------------
+                    case "4":
+                   AjustePositivoDeInventario();
+                    break;
+
+                     case "5":
+                   AjusteNegativoDeInventario();
                     break;
 
 
