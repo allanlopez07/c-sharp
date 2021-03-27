@@ -157,6 +157,7 @@ public class DatosdePrueba
         }
 
         Console.WriteLine("");
+//tarea-------------------------------------------------------------------------
         Console.WriteLine("SubTotal de la orden es de:    " + nuevaOrden.SubTotal);
         Console.WriteLine("Impuesto:                      " + nuevaOrden.Impuesto);
         Console.WriteLine("Total de la orden es de:       " + nuevaOrden.Total);
@@ -176,6 +177,7 @@ public class DatosdePrueba
 
         foreach (var orden in ListaOrdenes)
         {
+//tarea----------------------------------------------------------            
              Console.WriteLine("");
             Console.WriteLine("-Codigo | Fecha ");
             Console.WriteLine(orden.Codigo + "    |    " + orden.Fecha);
