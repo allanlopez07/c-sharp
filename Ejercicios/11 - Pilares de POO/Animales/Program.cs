@@ -93,7 +93,7 @@ namespace Animales
 
         case "2":
             Console.WriteLine(" ");
-            Console.WriteLine("*****Aves******");
+            Console.WriteLine("*****Aves y Peces******");
             Console.WriteLine(" ");
             Console.WriteLine("1. Aves");
             Console.WriteLine("2. Peces");
